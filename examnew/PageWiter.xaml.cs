@@ -16,17 +16,13 @@ using System.Windows.Shapes;
 namespace examnew
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для PageWiter.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class PageWiter : Page
     {
-        public MainWindow()
+        public PageWiter()
         {
             InitializeComponent();
-
-            Connection.Connect("localhost","5432", "postgres", "1234", "Exam");
-
-            AppFrame.Navigate(new PageEntry());
         }
     }
 }
